@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  position: relative;
 }
 .navbar {
   border-bottom: 3px solid #4caf50;
@@ -37,14 +38,19 @@ h1 {
   text-align: center;
 }
 
+.container {
+  position: relative;
+}
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/1024px-Moraine_Lake_17092005.jpg");
-  height: 50%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 1.5rem;
 }
 .hero-text {
   text-align: center;
@@ -62,7 +68,7 @@ h1 {
   display: inline-block;
   font-size: 16px;
   transition-duration: 0.4s;
-  position: relative;
+  /* position: relative; */
 }
 .btn:hover {
   background-color: white;
@@ -83,15 +89,21 @@ h1 {
 }
 
 .row {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
   .column {
     width: 100%;
     display: block;
