@@ -37,16 +37,15 @@ li a:hover {
 h1 {
   text-align: center;
 }
-.statement {
-  color: #4caf50;
-  font-style: italic;
-}
-.features {
-  font-family: "Montserrat", sans-serif;
-}
-
 .container {
   position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.statement {
+  color: #4caf50;
+  font-weight: 200;
+}
+.features {
   font-family: "Montserrat", sans-serif;
 }
 
