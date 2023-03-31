@@ -41,12 +41,12 @@ h1 {
   position: relative;
   font-family: "Montserrat", sans-serif;
 }
-.statement {
-  color: #4caf50;
-  font-weight: 200;
-}
 .features {
   font-family: "Montserrat", sans-serif;
+}
+.statement {
+  color: black;
+  font-weight: 550;
 }
 
 .hero {
@@ -57,7 +57,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-bottom: 1.5rem;
+  padding-bottom: 7.5rem;
 }
 .hero-text {
   text-align: center;
